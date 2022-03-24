@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdDelete } from "react-icons/md";
 
 export const Note = ({title, content,id,onDelete})=>{
     return(
@@ -6,7 +7,7 @@ export const Note = ({title, content,id,onDelete})=>{
             <h1>{title}</h1>
             <p>{content}</p>
 
-            <button onClick={()=>onDelete(id)}>delete</button>
+            <button onClick={()=>onDelete(id)}><MdDelete /></button>
         </div>
     )
 }
